@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Histórico</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div *ngFor="let item of historico">
+
+    <p>
+      {{ item.valor }}
+      {{ item.origem }}
+      →
+      {{ item.destino }}
+      =
+      {{ item.resultado }}
+    </p>
+
+  </div>
+
+</ion-content>
